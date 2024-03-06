@@ -9,12 +9,6 @@ for(let rows =1; rows<=16; rows++){
     subDivs.className = 'rows';
     container.appendChild(subDivs);
 }
-for(let cols =1; cols<=16; cols++){
-    subDivs2 = document.createElement('div');
-    subDivs2.className = 'cols';
-    container2.appendChild(subDivs2);
-
-}
 
 
 
