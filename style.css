@@ -1,9 +1,18 @@
 .container{
-
+  display: grid;
 }
-.squares {
-    border: 1px solid;
-    color: black;
-    height: 50px;
-    width: 50px;
-  }
+.container{
+     display: flex;
+     flex-direction: row;
+ }
+.container2{
+    display: flex;
+    flex-direction: column;
+}
+.rows,
+.cols{
+   border: 1px solid;
+   color: black;  
+   height: 50px;
+   width: 50px;
+}
