@@ -1,0 +1,17 @@
+*{
+    background-color: grey;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    margin: 0 auto;
+}
+.grid-layout{
+    background-color: white;
+    border: 1px solid;
+    width: 35.5px;
+    height: 35.5px;
+}
