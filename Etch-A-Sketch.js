@@ -6,7 +6,7 @@ function createGrid(){
         grid.className = 'grid-layout';
         container.appendChild(grid)
         grid.addEventListener('mouseover', ()=>{
-            grid.style.cssText = 'background-color: black;'
+            grid.style.backgroundColor = randomizedColor();
         })
     }
 }
@@ -14,7 +14,7 @@ createGrid()
 const button  = document.querySelector('.btn');
 
 function randomizedColor(){
-    let colors = ["red","green","blue"];
+    let colors = ["red","green","blue","orange", "yellow","indigo","violet"];
     return colors[Math.floor(Math.random()*colors.length)];
 }
 function askForGrid(grid){
@@ -31,6 +31,7 @@ function askForGrid(grid){
             container.appendChild(newGrid);
             newGrid.addEventListener('mouseover', ()=>{
                 newGrid.style.backgroundColor = randomizedColor()
+                
             })
             newGrid.style.height = gridCellHeight+"px";
             newGrid.style.width = gridCellWidth+"px";
