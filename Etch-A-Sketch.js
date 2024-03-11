@@ -41,6 +41,5 @@ function askForGrid(grid){
              createGrid(); 
         }
     })
-   
 }
 askForGrid(container);
