@@ -18,13 +18,19 @@ function askForGrid(grid){
         const length = prompt("Enter a preffered  Length for grid: ");
         const width = prompt("Enter a preffered  Width for grid: ");
         grid.innerHTML = " ";
-        for(let i = 0; i<length*width;i++) {
+        const size = length*width;
+        for(let i = 0; i<size;i++) {
             const newGrid = document.createElement('div');
             newGrid.className = 'new-grid-layout'
             container.appendChild(newGrid);
             newGrid.addEventListener('mouseover', ()=>{
                 newGrid.style.cssText = 'background-color: black;'
             })
+        }
+        if(size >= 1000){
+             alert("Unable to create grid");
+             grid.innerHTML = "";
+             createGrid(); 
         }
     })
    
