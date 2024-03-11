@@ -19,8 +19,8 @@ function randomizedColor(){
 }
 function askForGrid(grid){
     button.addEventListener('click', ()=>{
-        const length = prompt("Enter a prefered  Length for grid: ");
-        const width = prompt("Enter a prefered  Width for grid: ");
+        const length = prompt("Enter a preferred Height for grid: ");
+        const width = prompt("Enter a preferred  Width for grid: ");
         grid.innerHTML = " ";
         const gridCellHeight = (600/length)-2;
         const gridCellWidth = (600/length)-2;
@@ -31,12 +31,9 @@ function askForGrid(grid){
             container.appendChild(newGrid);
             newGrid.addEventListener('mouseover', ()=>{
                 newGrid.style.backgroundColor = randomizedColor()
-                
             })
             newGrid.style.height = gridCellHeight+"px";
             newGrid.style.width = gridCellWidth+"px";
-            
-            
         }
         if(size >= 10000){
              alert("Unable to create grid");

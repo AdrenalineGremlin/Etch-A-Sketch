@@ -18,6 +18,16 @@
 .new-grid-layout{
     background-color: white;
     border: 1px solid;
-    /* height: 198px;
-    width: 198px; */
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.btn{
+    border: transparent;
+    font-size: 40px;
+    border-width: 1px;
+    cursor: pointer;
+    
 }
