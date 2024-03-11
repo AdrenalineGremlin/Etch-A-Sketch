@@ -13,19 +13,29 @@ function createGrid(){
 createGrid()
 const button  = document.querySelector('.btn');
 
+function randomizedColor(){
+    let colors = ["red","green","blue"];
+    return colors[Math.floor(Math.random()*colors.length)];
+}
 function askForGrid(grid){
     button.addEventListener('click', ()=>{
-        const length = prompt("Enter a preffered  Length for grid: ");
-        const width = prompt("Enter a preffered  Width for grid: ");
+        const length = prompt("Enter a prefered  Length for grid: ");
+        const width = prompt("Enter a prefered  Width for grid: ");
         grid.innerHTML = " ";
+        const gridCellHeight = (600/length)-2;
+        const gridCellWidth = (600/length)-2;
         const size = length*width;
         for(let i = 0; i<size;i++) {
             const newGrid = document.createElement('div');
             newGrid.className = 'new-grid-layout'
             container.appendChild(newGrid);
             newGrid.addEventListener('mouseover', ()=>{
-                newGrid.style.cssText = 'background-color: black;'
+                newGrid.style.backgroundColor = randomizedColor()
             })
+            newGrid.style.height = gridCellHeight+"px";
+            newGrid.style.width = gridCellWidth+"px";
+            
+            
         }
         if(size >= 10000){
              alert("Unable to create grid");
