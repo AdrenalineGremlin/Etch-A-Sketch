@@ -27,7 +27,7 @@ function askForGrid(grid){
                 newGrid.style.cssText = 'background-color: black;'
             })
         }
-        if(size >= 1000){
+        if(size >= 10000){
              alert("Unable to create grid");
              grid.innerHTML = "";
              createGrid(); 
