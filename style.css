@@ -1,5 +1,5 @@
 *{
-    background-color: grey;
+    background-color: white;
 }
 .container{
     display: flex;
@@ -10,6 +10,12 @@
     margin: 0 auto;
 }
 .grid-layout{
+    background-color: white;
+    border: 1px solid;
+    width: 35.5px;
+    height: 35.5px;
+}
+.new-grid-layout{
     background-color: white;
     border: 1px solid;
     width: 35.5px;
